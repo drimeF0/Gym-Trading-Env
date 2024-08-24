@@ -1,5 +1,4 @@
-import gymnasium as gym
-from gymnasium import spaces
+from gymnasium import spaces, Env
 import pandas as pd
 import numpy as np
 import datetime
@@ -23,7 +22,7 @@ def dynamic_feature_last_position_taken(history):
 def dynamic_feature_real_position(history):
     return history['real_position', -1]
 
-class TradingEnv(gym.Env):
+class TradingEnv(Env):
     """
     An easy trading environment for OpenAI gym. It is recommended to use it this way :
 
