@@ -9,7 +9,7 @@ from collections import Counter
 from .utils.history import History
 from .utils.portfolio import Portfolio, TargetPortfolio
 
-import tempfile, os
+import os
 import warnings
 warnings.filterwarnings("error")
 
