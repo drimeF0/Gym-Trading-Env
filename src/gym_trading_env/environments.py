@@ -10,8 +10,6 @@ from .utils.history import History
 from .utils.portfolio import Portfolio, TargetPortfolio
 
 import os
-import warnings
-warnings.filterwarnings("error")
 
 def basic_reward_function(history : History):
     return np.log(history["portfolio_valuation", -1] / history["portfolio_valuation", -2])
